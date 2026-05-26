@@ -10,7 +10,7 @@ export function DeveloperStory() {
 
       <div className="max-w-6xl mx-auto relative">
         <h2 className="font-redressed text-4xl md:text-5xl text-[#6e3726] text-center mb-16">
-          Why pagemarked exists
+          Why Pagemarked exists
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -40,7 +40,7 @@ export function DeveloperStory() {
               A single paragraph can change how you see the world.
             </p>
             <p>
-              pagemarked is for readers who want to celebrate the small wins.
+              Pagemarked is for readers who want to celebrate the small wins.
               Post it to your story. Tag a friend. Let it be the reason you pick
               up the book tomorrow.
             </p>
@@ -56,7 +56,7 @@ export function DeveloperStory() {
                 style={{ background: "#1a2744", top: 20, left: 0 }}
               >
                 <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
-                  pagemarked
+                  Pagemarked
                 </div>
               </div>
               <div

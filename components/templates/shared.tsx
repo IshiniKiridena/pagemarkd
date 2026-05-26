@@ -67,7 +67,7 @@ export function PagemarkedWatermark({ color = "#f5f0e6" }: { color?: string }) {
         opacity: 0.85,
       }}
     >
-      pagemarked
+      Pagemarked
     </span>
   );
 }

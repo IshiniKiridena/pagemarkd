@@ -20,7 +20,7 @@ export function ClassicLibrary({ data }: TemplateProps) {
             color: "#f5f0e6",
           }}
         >
-          pagemarked
+          Pagemarked
         </span>
 
         <div className="flex-1 flex flex-col justify-center -mt-8">

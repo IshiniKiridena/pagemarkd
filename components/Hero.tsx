@@ -38,7 +38,7 @@ export function Hero({ onScrollToTemplates }: HeroProps) {
         }}
       />
 
-      <MusicPlayer />
+      {/* <MusicPlayer /> */}
 
       <div className="relative z-10 flex flex-col items-center text-center px-6 max-w-4xl mx-auto">
         <Logo color="#faf6ef" size="lg" className="mb-10" />
