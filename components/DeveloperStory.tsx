@@ -18,12 +18,12 @@ export function DeveloperStory() {
             <p>
               There were months I didn&apos;t read at all. Weeks turned into
               months, and the books on my shelf collected dust while I told
-              myself &ldquo;I&apos;ll get back to it soon.&rdquo;
+              myself I&apos;ll get back to it soon.
             </p>
             <p>
               I love sharing what I do, and I realized there&apos;s something
               powerful about accountability through sharing. When you post a workout session stat on your socials you feel seen.
-              You feel committed. You feel like you're not alone in your journey. That social layer adds a gentle pressure that keeps you going.
+              You feel committed. You feel like you&apos;re not alone in your journey. That social layer adds a gentle pressure that keeps you going.
             </p>
             <p>
               Because reading one page is infinitely more than reading nothing.
