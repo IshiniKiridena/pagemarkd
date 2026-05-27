@@ -1,4 +1,5 @@
 import {
+  PagemarkedBrandCorner,
   PagemarkedWatermark,
   TemplateBackground,
   TemplateProps,
@@ -28,9 +29,10 @@ export function DataReader({ data }: TemplateProps) {
       className="data-grid-bg"
     >
       <div
-        className="h-full flex flex-col px-16 py-20"
+        className="relative h-full flex flex-col px-16 py-20"
         style={{ fontFamily: "Inter, sans-serif" }}
       >
+        <PagemarkedBrandCorner color="#00ff88" />
         <p
           style={{
             fontSize: 24,
@@ -160,7 +162,7 @@ export function DataReader({ data }: TemplateProps) {
         )}
 
         <div className="flex justify-between items-end">
-          <PagemarkedWatermark color="rgba(0, 255, 136, 0.5)" />
+          {/* <PagemarkedWatermark color="rgba(0, 255, 136, 0.5)" /> */}
           <p
             style={{
               fontFamily: "JetBrains Mono, monospace",

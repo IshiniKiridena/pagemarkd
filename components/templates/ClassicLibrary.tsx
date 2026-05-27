@@ -1,4 +1,9 @@
-import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
+import {
+  PagemarkedBrandCorner,
+  TemplateBackground,
+  TemplateProps,
+  useTemplateStats,
+} from "./shared";
 
 export function ClassicLibrary({ data }: TemplateProps) {
   const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
@@ -10,20 +15,12 @@ export function ClassicLibrary({ data }: TemplateProps) {
       overlay="rgba(26, 39, 68, 0.75)"
     >
       <div
-        className="flex flex-col h-full px-16 py-20"
+        className="relative flex flex-col h-full px-16 py-20"
         style={{ fontFamily: "Lora, serif" }}
       >
-        <span
-          style={{
-            fontFamily: "Redressed, cursive",
-            fontSize: 32,
-            color: "#f5f0e6",
-          }}
-        >
-          Pagemarked
-        </span>
+        <PagemarkedBrandCorner color="#f5f0e6" />
 
-        <div className="flex-1 flex flex-col justify-center -mt-8">
+        <div className="flex-1 flex flex-col justify-center">
           <h1
             style={{
               fontFamily: "Playfair Display, serif",

@@ -1,5 +1,10 @@
 import { BookmarkIcon } from "../BookmarkIcon";
-import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
+import {
+  PagemarkedBrandCorner,
+  TemplateBackground,
+  TemplateProps,
+  useTemplateStats,
+} from "./shared";
 
 export function PaperJournal({ data }: TemplateProps) {
   const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
@@ -15,20 +20,10 @@ export function PaperJournal({ data }: TemplateProps) {
         className="h-full flex flex-col px-20 py-24 relative"
         style={{ fontFamily: "Caveat, cursive" }}
       >
-        <div className="absolute top-16 right-16">
+        <PagemarkedBrandCorner color="#1a3a5c" />
+        <div className="absolute top-28 left-16">
           <BookmarkIcon className="w-12 h-16" color="#1a3a5c" />
         </div>
-
-        <p
-          style={{
-            fontSize: 36,
-            color: "#6b5b4f",
-            textAlign: "right",
-            paddingRight: 80,
-          }}
-        >
-          {dateFormatted}
-        </p>
 
         <div className="flex-1 flex flex-col justify-center -mt-12">
           <h1
@@ -111,6 +106,16 @@ export function PaperJournal({ data }: TemplateProps) {
           }}
         >
           {handle}
+        </p>
+
+        <p
+          style={{
+            fontSize: 36,
+            color: "#6b5b4f",
+            textAlign: "left",
+          }}
+        >
+          {dateFormatted}
         </p>
       </div>
     </TemplateBackground>

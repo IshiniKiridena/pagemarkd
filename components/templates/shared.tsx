@@ -59,6 +59,31 @@ export function TemplateBackground({
   );
 }
 
+export function PagemarkedBrand({ color = "#f5f0e6" }: { color?: string }) {
+  return (
+    <span
+      style={{
+        fontFamily: "Redressed, cursive",
+        fontSize: 32,
+        color,
+      }}
+    >
+      Pagemarked
+    </span>
+  );
+}
+
+export function PagemarkedBrandCorner({ color = "#f5f0e6" }: { color?: string }) {
+  return (
+    <div
+      className="absolute top-20 right-16 z-20"
+      style={{ pointerEvents: "none" }}
+    >
+      <PagemarkedBrand color={color} />
+    </div>
+  );
+}
+
 export function PagemarkedWatermark({ color = "#f5f0e6" }: { color?: string }) {
   return (
     <span
@@ -69,7 +94,7 @@ export function PagemarkedWatermark({ color = "#f5f0e6" }: { color?: string }) {
         opacity: 0.85,
       }}
     >
-      Pagemarked
+      pagemarked
     </span>
   );
 }

@@ -1,4 +1,9 @@
-import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
+import {
+  PagemarkedBrandCorner,
+  TemplateBackground,
+  TemplateProps,
+  useTemplateStats,
+} from "./shared";
 
 export function ModernMinimal({ data }: TemplateProps) {
   const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
@@ -20,7 +25,8 @@ export function ModernMinimal({ data }: TemplateProps) {
             flexShrink: 0,
           }}
         />
-        <div className="flex-1 flex flex-col px-20 py-24">
+        <div className="relative flex-1 flex flex-col px-20 py-24">
+          <PagemarkedBrandCorner color="#2c2c2c" />
           <p
             style={{
               fontSize: 22,

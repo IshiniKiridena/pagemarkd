@@ -1,4 +1,9 @@
-import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
+import {
+  PagemarkedBrandCorner,
+  TemplateBackground,
+  TemplateProps,
+  useTemplateStats,
+} from "./shared";
 
 export function CozyNook({ data }: TemplateProps) {
   const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
@@ -9,7 +14,8 @@ export function CozyNook({ data }: TemplateProps) {
       imageDataUrl={data.imageDataUrl}
       overlay="rgba(245, 230, 211, 0.6)"
     >
-      <div className="h-full flex items-center justify-center px-12 relative">
+      <div className="relative h-full flex items-center justify-center px-12">
+        <PagemarkedBrandCorner color="#5c4033" />
         <div
           className="absolute rounded-full opacity-40"
           style={{
