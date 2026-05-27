@@ -30,7 +30,7 @@ export function DeveloperStory() {
               A single paragraph can change how you see the world.
             </p>
             <p>
-              Pagemarkd is for readers who want to celebrate the small wins and big the wins.
+              Pagemarkd is for readers who want to celebrate the small wins and the big wins.
               Post it to your story. Tag a friend. Let it be the reason you pick
               up the book tomorrow.
             </p>
@@ -50,33 +50,13 @@ export function DeveloperStory() {
           </div>
 
           <div className="flex justify-center items-center">
-            <div className="relative w-64 h-80">
-              <div
-                className="absolute w-48 h-64 rounded-lg shadow-xl transform -rotate-6"
-                style={{ background: "#1a2744", top: 20, left: 0 }}
-              >
-                <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
-                  Pagemarkd
-                </div>
-              </div>
-              <div
-                className="absolute w-48 h-64 rounded-lg shadow-xl transform rotate-3"
-                style={{ background: "#6e3726", top: 40, left: 60 }}
-              >
-                <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
-                  Pagemarkd
-                </div>
-              </div>
-              <div
-                className="absolute w-48 h-64 rounded-lg shadow-2xl transform rotate-8"
-                style={{ background: "#0a0a0a", top: 60, left: 100 }}
-              >
-                <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
-                  Pagemarkd
-                </div>
-              </div>
-            </div>
+            <img
+              src="/logo.png"
+              alt="Pagemarkd Logo"
+              className="w-64 h-80 object-contain"
+            />
           </div>
+    
         </div>
       </div>
     </section>

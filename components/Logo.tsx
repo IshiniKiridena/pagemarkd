@@ -20,7 +20,14 @@ export function Logo({
   const s = sizeMap[size];
   return (
     <div className={`flex items-center gap-2 ${className}`}>
-      <BookmarkIcon className={s.icon} color={color} />
+      <img
+        src="/logo-bm.png"
+        alt="Bookmark Logo"
+        className={s.icon}
+        style={{ display: "inline-block", transform: "scale(2.6)" }}
+   
+      />
+
       <span
         className={`font-redressed ${s.text} leading-none`}
         style={{ color }}

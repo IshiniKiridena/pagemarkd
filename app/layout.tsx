@@ -5,6 +5,9 @@ export const metadata: Metadata = {
   title: "Pagemarkd — Share Your Reading",
   description:
     "Document and share your reading sessions with beautiful Instagram Story cards.",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
