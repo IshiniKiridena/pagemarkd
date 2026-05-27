@@ -92,7 +92,7 @@ export default function Home() {
   const handleDownload = () => {
     if (!generatedImage || !sessionData) return;
     const name = sanitizeFilename(sessionData.bookTitle) || "reading";
-    downloadDataUrl(generatedImage, `pagemarked-${name}.png`);
+    downloadDataUrl(generatedImage, `pagemarkd-${name}.png`);
   };
 
   const handleReset = () => {

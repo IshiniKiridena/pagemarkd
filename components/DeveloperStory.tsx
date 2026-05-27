@@ -10,7 +10,7 @@ export function DeveloperStory() {
 
       <div className="max-w-6xl mx-auto relative">
         <h2 className="font-redressed text-4xl md:text-5xl text-[#6e3726] text-center mb-16">
-          Why Pagemarked exists
+          Why Pagemarkd exists
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
@@ -21,31 +21,31 @@ export function DeveloperStory() {
               myself &ldquo;I&apos;ll get back to it soon.&rdquo;
             </p>
             <p>
-              I love sharing what I do — and I realized there&apos;s something
-              powerful about accountability through sharing. When you post a
-              workout on Strava, you feel seen. You feel committed. Your friends
-              notice. That social layer adds a gentle pressure that keeps you
-              going.
-            </p>
-            <p className="font-redressed text-2xl text-[#6e3726] italic border-l-4 border-[#6e3726] pl-6 my-8">
-              So I thought: what if reading had that?
-            </p>
-            <p>
-              Not a competition. Not a leaderboard. Just a beautiful little card
-              that says — &ldquo;I read today. I showed up for my mind
-              today.&rdquo;
+              I love sharing what I do, and I realized there&apos;s something
+              powerful about accountability through sharing. When you post a workout session stat on your socials you feel seen.
+              You feel committed. You feel like you're not alone in your journey. That social layer adds a gentle pressure that keeps you going.
             </p>
             <p>
               Because reading one page is infinitely more than reading nothing.
               A single paragraph can change how you see the world.
             </p>
             <p>
-              Pagemarked is for readers who want to celebrate the small wins.
+              Pagemarkd is for readers who want to celebrate the small wins and big the wins.
               Post it to your story. Tag a friend. Let it be the reason you pick
               up the book tomorrow.
             </p>
             <p className="text-[#6e3726] font-redressed text-xl pt-4">
-              — Built by a reader, for readers. 🔖
+              ෴ Built by a reader, for readers ෴
+            </p>
+            <p>
+              <a
+                href="https://www.goodreads.com/user/show/140175368-ishini-kiridena"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="underline text-[#6e3726] hover:text-[#c4956a] transition-colors"
+              >
+                Find my Goodreads profile here
+              </a>
             </p>
           </div>
 
@@ -56,26 +56,23 @@ export function DeveloperStory() {
                 style={{ background: "#1a2744", top: 20, left: 0 }}
               >
                 <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
-                  Pagemarked
+                  Pagemarkd
                 </div>
               </div>
               <div
                 className="absolute w-48 h-64 rounded-lg shadow-xl transform rotate-3"
-                style={{ background: "#f5e6d3", top: 40, left: 60 }}
+                style={{ background: "#6e3726", top: 40, left: 60 }}
               >
-                <div className="p-4 text-[#5c4033] font-redressed text-sm">
-                  cozy read
+                <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
+                  Pagemarkd
                 </div>
               </div>
               <div
                 className="absolute w-48 h-64 rounded-lg shadow-2xl transform rotate-8"
                 style={{ background: "#0a0a0a", top: 60, left: 100 }}
               >
-                <div
-                  className="p-4 text-sm font-mono"
-                  style={{ color: "#00ff88" }}
-                >
-                  42 pg
+                <div className="p-4 text-[#f5f0e6] font-redressed text-sm opacity-80">
+                  Pagemarkd
                 </div>
               </div>
             </div>

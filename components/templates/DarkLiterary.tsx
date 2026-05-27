@@ -1,6 +1,6 @@
 import {
-  PagemarkedBrandCorner,
-  PagemarkedWatermark,
+  PagemarkdBrandCorner,
+  PagemarkdWatermark,
   TemplateBackground,
   TemplateProps,
   useTemplateStats,
@@ -27,7 +27,7 @@ export function DarkLiterary({ data }: TemplateProps) {
         className="relative z-10 h-full flex flex-col items-center justify-center px-16 py-20 text-center"
         style={{ fontFamily: "EB Garamond, serif" }}
       >
-        <PagemarkedBrandCorner color="#f5f0e6" />
+        <PagemarkdBrandCorner color="#f5f0e6" />
         <div className="flex-1 flex flex-col items-center justify-center">
           <h1
             style={{
@@ -146,7 +146,7 @@ export function DarkLiterary({ data }: TemplateProps) {
         </div>
 
         <div className="flex flex-col items-center gap-4 pb-8">
-          {/* <PagemarkedWatermark color="#c9a84c" /> */}
+          {/* <PagemarkdWatermark color="#c9a84c" /> */}
           <p
             style={{
               fontFamily: "Cinzel, serif",

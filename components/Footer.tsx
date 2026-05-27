@@ -14,6 +14,20 @@ export function Footer() {
           Made with ♥ and books.
         </p>
         <p className="font-redressed text-sm opacity-50">{year}</p>
+        <div className="mt-4">
+          <span className="font-redressed text-xs opacity-60">
+            Feedback? Bug?{" "}
+          </span>
+          <a
+            href="https://github.com/IshiniKiridena/pagemarkd/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline text-[#f8edca] hover:text-[#c4956a] transition-colors font-redressed text-xs opacity-80"
+          >
+            Open an issue or suggestion on GitHub
+          </a>
+        </div>
+ 
       </div>
     </footer>
   );

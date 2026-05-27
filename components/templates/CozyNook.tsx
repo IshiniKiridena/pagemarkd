@@ -1,5 +1,5 @@
 import {
-  PagemarkedBrandCorner,
+  PagemarkdBrandCorner,
   TemplateBackground,
   TemplateProps,
   useTemplateStats,
@@ -15,7 +15,7 @@ export function CozyNook({ data }: TemplateProps) {
       overlay="rgba(245, 230, 211, 0.6)"
     >
       <div className="relative h-full flex items-center justify-center px-12">
-        <PagemarkedBrandCorner color="#5c4033" />
+        <PagemarkdBrandCorner color="#5c4033" />
         <div
           className="absolute rounded-full opacity-40"
           style={{

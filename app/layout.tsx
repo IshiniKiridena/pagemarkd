@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Pagemarked — Share Your Reading",
+  title: "Pagemarkd — Share Your Reading",
   description:
     "Document and share your reading sessions with beautiful Instagram Story cards.",
 };

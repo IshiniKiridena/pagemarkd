@@ -1,5 +1,5 @@
 import {
-  PagemarkedBrandCorner,
+  PagemarkdBrandCorner,
   TemplateBackground,
   TemplateProps,
   useTemplateStats,
@@ -18,7 +18,7 @@ export function ClassicLibrary({ data }: TemplateProps) {
         className="relative flex flex-col h-full px-16 py-20"
         style={{ fontFamily: "Lora, serif" }}
       >
-        <PagemarkedBrandCorner color="#f5f0e6" />
+        <PagemarkdBrandCorner color="#f5f0e6" />
 
         <div className="flex-1 flex flex-col justify-center">
           <h1

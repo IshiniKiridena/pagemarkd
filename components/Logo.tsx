@@ -25,7 +25,7 @@ export function Logo({
         className={`font-redressed ${s.text} leading-none`}
         style={{ color }}
       >
-        Pagemarked
+        Pagemarkd
       </span>
     </div>
   );

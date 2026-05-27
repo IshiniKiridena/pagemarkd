@@ -1,5 +1,5 @@
 import {
-  PagemarkedBrandCorner,
+  PagemarkdBrandCorner,
   TemplateBackground,
   TemplateProps,
   useTemplateStats,
@@ -26,7 +26,7 @@ export function ModernMinimal({ data }: TemplateProps) {
           }}
         />
         <div className="relative flex-1 flex flex-col px-20 py-24">
-          <PagemarkedBrandCorner color="#2c2c2c" />
+          <PagemarkdBrandCorner color="#2c2c2c" />
           <p
             style={{
               fontSize: 22,

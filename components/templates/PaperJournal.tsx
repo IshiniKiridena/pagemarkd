@@ -1,6 +1,6 @@
 import { BookmarkIcon } from "../BookmarkIcon";
 import {
-  PagemarkedBrandCorner,
+  PagemarkdBrandCorner,
   TemplateBackground,
   TemplateProps,
   useTemplateStats,
@@ -20,7 +20,7 @@ export function PaperJournal({ data }: TemplateProps) {
         className="h-full flex flex-col px-20 py-24 relative"
         style={{ fontFamily: "Caveat, cursive" }}
       >
-        <PagemarkedBrandCorner color="#1a3a5c" />
+        <PagemarkdBrandCorner color="#1a3a5c" />
         <div className="absolute top-28 left-16">
           <BookmarkIcon className="w-12 h-16" color="#1a3a5c" />
         </div>

@@ -59,7 +59,7 @@ export function TemplateBackground({
   );
 }
 
-export function PagemarkedBrand({ color = "#f5f0e6" }: { color?: string }) {
+export function PagemarkdBrand({ color = "#f5f0e6" }: { color?: string }) {
   return (
     <span
       style={{
@@ -68,23 +68,23 @@ export function PagemarkedBrand({ color = "#f5f0e6" }: { color?: string }) {
         color,
       }}
     >
-      Pagemarked
+      Pagemarkd
     </span>
   );
 }
 
-export function PagemarkedBrandCorner({ color = "#f5f0e6" }: { color?: string }) {
+export function PagemarkdBrandCorner({ color = "#f5f0e6" }: { color?: string }) {
   return (
     <div
       className="absolute top-20 right-16 z-20"
       style={{ pointerEvents: "none" }}
     >
-      <PagemarkedBrand color={color} />
+      <PagemarkdBrand color={color} />
     </div>
   );
 }
 
-export function PagemarkedWatermark({ color = "#f5f0e6" }: { color?: string }) {
+export function PagemarkdWatermark({ color = "#f5f0e6" }: { color?: string }) {
   return (
     <span
       style={{
@@ -94,7 +94,7 @@ export function PagemarkedWatermark({ color = "#f5f0e6" }: { color?: string }) {
         opacity: 0.85,
       }}
     >
-      pagemarked
+      Pagemarkd
     </span>
   );
 }

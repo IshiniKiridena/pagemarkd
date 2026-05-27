@@ -1,4 +1,4 @@
-# Pagemarked
+# Pagemarkd
 
 A one-page Next.js app for tracking reading sessions and generating shareable Instagram Story cards (1080×1920).
 
