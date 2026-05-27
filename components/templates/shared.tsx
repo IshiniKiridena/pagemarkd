@@ -11,7 +11,7 @@ export interface TemplateProps {
 }
 
 export function useTemplateStats(data: ReadingSessionData) {
-  const progress = calcProgress(data.pagesRead, data.totalPages);
+  const progress = calcProgress(data.lastPageRead, data.totalPages);
   const timeFormatted = formatReadingTime(data.readingTimeMinutes);
   const dateFormatted = formatDate(data.date);
   const pagesPerHour = calcPagesPerHour(
@@ -19,9 +19,11 @@ export function useTemplateStats(data: ReadingSessionData) {
     data.readingTimeMinutes
   );
   const handle = data.handle.trim() || "@reader";
+  const sessionPages = data.pagesRead;
 
   return {
     progress,
+    sessionPages,
     timeFormatted,
     dateFormatted,
     pagesPerHour,

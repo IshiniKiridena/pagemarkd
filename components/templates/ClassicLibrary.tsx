@@ -1,7 +1,7 @@
 import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
 
 export function ClassicLibrary({ data }: TemplateProps) {
-  const { progress, timeFormatted, dateFormatted, handle } =
+  const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
     useTemplateStats(data);
 
   return (
@@ -65,14 +65,25 @@ export function ClassicLibrary({ data }: TemplateProps) {
               fontWeight: 700,
             }}
           >
-            {data.pagesRead} pages
+            {sessionPages} pages
+          </p>
+          <p
+            style={{
+              fontFamily: "Lora, serif",
+              fontSize: 28,
+              color: "#d4c4a8",
+              marginTop: 8,
+              fontStyle: "italic",
+            }}
+          >
+            this session
           </p>
           <p
             style={{
               fontFamily: "Lora, serif",
               fontSize: 40,
               color: "#d4c4a8",
-              marginTop: 8,
+              marginTop: 24,
             }}
           >
             {timeFormatted}

@@ -6,8 +6,14 @@ import {
 } from "./shared";
 
 export function DataReader({ data }: TemplateProps) {
-  const { progress, timeFormatted, dateFormatted, handle, pagesPerHour } =
-    useTemplateStats(data);
+  const {
+    progress,
+    sessionPages,
+    timeFormatted,
+    dateFormatted,
+    handle,
+    pagesPerHour,
+  } = useTemplateStats(data);
 
   const progressDisplay = progress !== null ? `${progress}%` : "—";
   const speedDisplay =
@@ -78,7 +84,7 @@ export function DataReader({ data }: TemplateProps) {
           }}
         >
           {[
-            { label: "Pages", value: String(data.pagesRead) },
+            { label: "Pages Today", value: String(sessionPages) },
             { label: "Time", value: timeFormatted },
             {
               label: "Progress",

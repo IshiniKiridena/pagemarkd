@@ -9,7 +9,10 @@ export type TemplateId =
 export interface ReadingSessionData {
   bookTitle: string;
   author: string;
+  /** Pages read in this session */
   pagesRead: number;
+  /** Furthest page reached in the book */
+  lastPageRead?: number;
   totalPages?: number;
   readingTimeMinutes: number;
   handle: string;

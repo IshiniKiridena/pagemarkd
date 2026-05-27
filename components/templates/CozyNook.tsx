@@ -1,7 +1,7 @@
 import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
 
 export function CozyNook({ data }: TemplateProps) {
-  const { progress, timeFormatted, dateFormatted, handle } =
+  const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
     useTemplateStats(data);
 
   return (
@@ -69,7 +69,7 @@ export function CozyNook({ data }: TemplateProps) {
             <div className="flex items-center gap-3">
               <span style={{ fontSize: 28 }}>📄</span>
               <span style={{ fontSize: 36, color: "#5c4033", fontWeight: 600 }}>
-                {data.pagesRead} pages
+                {sessionPages} pages today
               </span>
             </div>
             <div className="flex items-center gap-3">
@@ -89,7 +89,7 @@ export function CozyNook({ data }: TemplateProps) {
                 marginTop: 20,
               }}
             >
-              {progress}% complete
+              {progress}% through the book
             </p>
           )}
 

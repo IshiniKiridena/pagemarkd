@@ -2,7 +2,8 @@ import { BookmarkIcon } from "../BookmarkIcon";
 import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
 
 export function PaperJournal({ data }: TemplateProps) {
-  const { timeFormatted, dateFormatted, handle } = useTemplateStats(data);
+  const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
+    useTemplateStats(data);
 
   return (
     <TemplateBackground
@@ -69,8 +70,13 @@ export function PaperJournal({ data }: TemplateProps) {
               fontFamily: "system-ui, sans-serif",
             }}
           >
-            <li style={{ marginBottom: 16 }}>○ Pages: {data.pagesRead}</li>
-            <li>○ Time: {timeFormatted}</li>
+            <li style={{ marginBottom: 16 }}>
+              ○ Pages today: {sessionPages}
+            </li>
+            <li style={{ marginBottom: 16 }}>○ Time: {timeFormatted}</li>
+            {progress !== null && (
+              <li>○ Progress: {progress}%</li>
+            )}
           </ul>
 
           <div

@@ -15,11 +15,11 @@ export function formatDate(dateStr: string): string {
 }
 
 export function calcProgress(
-  pagesRead: number,
+  lastPageRead: number | undefined,
   totalPages?: number
 ): number | null {
-  if (!totalPages || totalPages <= 0) return null;
-  return Math.min(100, Math.round((pagesRead / totalPages) * 100));
+  if (!lastPageRead || !totalPages || totalPages <= 0) return null;
+  return Math.min(100, Math.round((lastPageRead / totalPages) * 100));
 }
 
 export function calcPagesPerHour(

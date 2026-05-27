@@ -1,13 +1,5 @@
 import type { Metadata } from "next";
-import { Redressed } from "next/font/google";
 import "./globals.css";
-
-const redressed = Redressed({
-  weight: "400",
-  subsets: ["latin"],
-  variable: "--font-redressed",
-  display: "swap",
-});
 
 export const metadata: Metadata = {
   title: "Pagemarked — Share Your Reading",
@@ -22,11 +14,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${redressed.className} ${redressed.variable} antialiased`}
-      >
-        {children}
-      </body>
+      <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin="anonymous"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Redressed&display=swap"
+          rel="stylesheet"
+        />
+      </head>
+      <body className="font-redressed antialiased">{children}</body>
     </html>
   );
 }

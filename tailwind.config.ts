@@ -17,8 +17,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        brand: ["var(--font-brand)", "cursive"],
-        redressed: ["var(--font-redressed)", "cursive"],
+        sans: ["Redressed", "cursive"],
+        brand: ["Redressed", "cursive"],
+        redressed: ["Redressed", "cursive"],
       },
     },
   },

@@ -7,6 +7,7 @@ export interface FormValues {
   bookTitle: string;
   author: string;
   pagesRead: string;
+  lastPageRead: string;
   totalPages: string;
   readingTimeMinutes: string;
   handle: string;
@@ -25,6 +26,7 @@ const defaultForm = (): FormValues => ({
   bookTitle: "",
   author: "",
   pagesRead: "",
+  lastPageRead: "",
   totalPages: "",
   readingTimeMinutes: "",
   handle: "",
@@ -88,6 +90,12 @@ export function ReadingForm({
     if (!form.author.trim()) next.author = "Author is required";
     if (!form.pagesRead || Number(form.pagesRead) < 1)
       next.pagesRead = "Enter pages read today";
+    if (form.totalPages) {
+      if (!form.lastPageRead || Number(form.lastPageRead) < 1)
+        next.lastPageRead = "Enter the last page you read";
+      else if (Number(form.lastPageRead) > Number(form.totalPages))
+        next.lastPageRead = "Last page cannot exceed total pages";
+    }
     if (!form.readingTimeMinutes || Number(form.readingTimeMinutes) < 1)
       next.readingTimeMinutes = "Enter reading time in minutes";
     if (!imageDataUrl) next.image = "Upload a book cover or mood image";
@@ -116,6 +124,9 @@ export function ReadingForm({
       bookTitle: form.bookTitle.trim(),
       author: form.author.trim(),
       pagesRead: Number(form.pagesRead),
+      lastPageRead: form.lastPageRead
+        ? Number(form.lastPageRead)
+        : undefined,
       totalPages: form.totalPages ? Number(form.totalPages) : undefined,
       readingTimeMinutes: Number(form.readingTimeMinutes),
       handle: form.handle.trim() || "@reader",
@@ -190,17 +201,38 @@ export function ReadingForm({
           </div>
           <div>
             <label className="block text-[#6e3726] mb-1 font-redressed">
-              Total Pages in Book
+              Last Page Read
             </label>
             <input
               type="number"
               min={1}
               className={inputClass}
-              value={form.totalPages}
-              onChange={(e) => update("totalPages", e.target.value)}
-              placeholder="Optional"
+              value={form.lastPageRead}
+              onChange={(e) => update("lastPageRead", e.target.value)}
+              placeholder={
+                form.totalPages ? "Required for progress %" : "Optional"
+              }
             />
+            {errors.lastPageRead && (
+              <p className="text-[#6e3726] text-sm mt-1">
+                {errors.lastPageRead}
+              </p>
+            )}
           </div>
+        </div>
+
+        <div>
+          <label className="block text-[#6e3726] mb-1 font-redressed">
+            Total Pages in Book
+          </label>
+          <input
+            type="number"
+            min={1}
+            className={inputClass}
+            value={form.totalPages}
+            onChange={(e) => update("totalPages", e.target.value)}
+            placeholder="Optional — needed with last page for progress %"
+          />
         </div>
 
         <div>

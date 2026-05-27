@@ -1,7 +1,7 @@
 import { TemplateBackground, TemplateProps, useTemplateStats } from "./shared";
 
 export function ModernMinimal({ data }: TemplateProps) {
-  const { progress, timeFormatted, dateFormatted, handle } =
+  const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
     useTemplateStats(data);
 
   return (
@@ -66,7 +66,7 @@ export function ModernMinimal({ data }: TemplateProps) {
                   lineHeight: 1,
                 }}
               >
-                {data.pagesRead}
+                {sessionPages}
               </p>
               <p
                 style={{
@@ -77,7 +77,7 @@ export function ModernMinimal({ data }: TemplateProps) {
                   textTransform: "uppercase",
                 }}
               >
-                Pages
+                Pages Today
               </p>
             </div>
             <div>
@@ -124,7 +124,7 @@ export function ModernMinimal({ data }: TemplateProps) {
                 />
               </div>
               <p style={{ fontSize: 24, color: "#6b7280", marginTop: 12 }}>
-                {progress}% progress
+                {progress}% through book
               </p>
             </div>
           )}

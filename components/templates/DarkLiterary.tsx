@@ -6,7 +6,7 @@ import {
 } from "./shared";
 
 export function DarkLiterary({ data }: TemplateProps) {
-  const { progress, timeFormatted, dateFormatted, handle } =
+  const { progress, sessionPages, timeFormatted, dateFormatted, handle } =
     useTemplateStats(data);
 
   return (
@@ -71,7 +71,7 @@ export function DarkLiterary({ data }: TemplateProps) {
               fontWeight: 700,
             }}
           >
-            {data.pagesRead}
+            {sessionPages}
           </p>
           <p
             style={{
@@ -83,7 +83,7 @@ export function DarkLiterary({ data }: TemplateProps) {
               textTransform: "uppercase",
             }}
           >
-            pages
+            pages today
           </p>
           <p
             style={{
@@ -104,7 +104,7 @@ export function DarkLiterary({ data }: TemplateProps) {
                 fontStyle: "italic",
               }}
             >
-              {progress}% through
+              {progress}% through the book
             </p>
           )}
 
