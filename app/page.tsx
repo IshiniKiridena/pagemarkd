@@ -22,6 +22,9 @@ import { sanitizeFilename } from "@/lib/utils";
 // TODO v2: Book search via Google Books API to auto-fill cover
 
 export default function Home() {
+  const pageBgUrl =
+    "https://images.unsplash.com/photo-1631519952398-5b1d76b946e8?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+
   const [selectedTemplate, setSelectedTemplate] = useState<TemplateId | null>(
     null
   );
@@ -107,27 +110,49 @@ export default function Home() {
     <main>
       <Hero onScrollToTemplates={() => scrollTo("templates")} />
 
-      <TemplateSelector
-        selected={selectedTemplate}
-        onSelect={setSelectedTemplate}
-      />
+      <div className="relative">
+        {/* Background image behind everything except Hero/Footer */}
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{
+            backgroundImage: `url(${pageBgUrl})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            opacity: 0.9,
+          }}
+        />
+        {/* Cream overlay to keep the UI readable */}
+        <div
+          aria-hidden
+          className="absolute inset-0"
+          style={{ backgroundColor: "rgba(248, 237, 202, 0.88)" }}
+        />
 
-      <ReadingForm
-        key={formKey}
-        selectedTemplate={selectedTemplate}
-        onGenerate={handleGenerate}
-        isGenerating={isGenerating}
-        formKey={formKey}
-      />
+        <div className="relative">
+          <TemplateSelector
+            selected={selectedTemplate}
+            onSelect={setSelectedTemplate}
+          />
 
-      <GeneratedPreview
-        imageDataUrl={generatedImage}
-        bookTitle={sessionData?.bookTitle ?? ""}
-        onDownload={handleDownload}
-        onReset={handleReset}
-      />
+          <ReadingForm
+            key={formKey}
+            selectedTemplate={selectedTemplate}
+            onGenerate={handleGenerate}
+            isGenerating={isGenerating}
+            formKey={formKey}
+          />
 
-      <DeveloperStory />
+          <GeneratedPreview
+            imageDataUrl={generatedImage}
+            bookTitle={sessionData?.bookTitle ?? ""}
+            onDownload={handleDownload}
+            onReset={handleReset}
+          />
+
+          <DeveloperStory />
+        </div>
+      </div>
       <Footer />
 
       {sessionData && selectedTemplate && (

@@ -1,6 +1,6 @@
 export function DeveloperStory() {
   return (
-    <section className="py-20 px-6 md:px-12 bg-[#f8edca] relative overflow-hidden">
+    <section className="py-20 px-6 md:px-12 relative overflow-hidden">
       <div
         className="absolute inset-0 opacity-[0.04] pointer-events-none"
         style={{
@@ -8,7 +8,7 @@ export function DeveloperStory() {
         }}
       />
 
-      <div className="max-w-6xl mx-auto relative">
+      <div className="max-w-6xl mx-auto relative bg-[#f8edca]/85 backdrop-blur-sm rounded-3xl shadow-lg px-6 md:px-10 py-10">
         <h2 className="font-redressed text-4xl md:text-5xl text-[#6e3726] text-center mb-16">
           Why Pagemarkd exists
         </h2>

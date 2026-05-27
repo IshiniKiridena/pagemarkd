@@ -27,7 +27,7 @@ export function Hero({ onScrollToTemplates }: HeroProps) {
         className="absolute inset-0 bg-cover bg-center"
         style={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=1920&q=80)",
+            "url(https://images.unsplash.com/photo-1598640960622-f51a8bdf8231?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D)",
         }}
       />
       <div
