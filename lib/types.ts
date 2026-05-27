@@ -39,7 +39,7 @@ export const TEMPLATES: TemplateMeta[] = [
     name: "Classic Library",
     emoji: "📚",
     bestFor:
-      "Scholars, non-fiction readers, literary fiction lovers, academic types",
+      "Scholars, nonfiction readers, literary fiction lovers, academic types",
     vibeTag: "For the serious reader",
     fontsNote: "Playfair Display + Lora",
     previewBg: "#1a2744",
@@ -73,7 +73,7 @@ export const TEMPLATES: TemplateMeta[] = [
     name: "Dark Literary",
     emoji: "🕯️",
     bestFor:
-      "Philosophy, classics, late-night reading, moody aesthetic lovers",
+      "Philosophy, classics, late night reading, moody aesthetic lovers",
     vibeTag: "Deep thoughts at midnight",
     fontsNote: "Cinzel + EB Garamond",
     previewBg: "#0b0b0f",

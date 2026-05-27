@@ -96,7 +96,7 @@ export function TemplateSelector({
 
                 <div className="flex-1 min-w-0">
                   <h3 className="font-redressed text-2xl text-[#6e3726]">
-                    {t.emoji} {t.name}
+                   {t.name}
                   </h3>
                   <p className="text-sm text-brand-dark/70 mt-2 leading-snug">
                     <span className="font-semibold text-[#6e3726]">

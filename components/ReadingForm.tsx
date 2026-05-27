@@ -161,7 +161,7 @@ export function ReadingForm({
             className={inputClass}
             value={form.bookTitle}
             onChange={(e) => update("bookTitle", e.target.value)}
-            placeholder="The Name of the Wind"
+            placeholder="The Alchemist"
           />
           {errors.bookTitle && (
             <p className="text-[#6e3726] text-sm mt-1">{errors.bookTitle}</p>
@@ -176,7 +176,7 @@ export function ReadingForm({
             className={inputClass}
             value={form.author}
             onChange={(e) => update("author", e.target.value)}
-            placeholder="Patrick Rothfuss"
+            placeholder="Paulo Coelho"
           />
           {errors.author && (
             <p className="text-[#6e3726] text-sm mt-1">{errors.author}</p>
@@ -231,7 +231,7 @@ export function ReadingForm({
             className={inputClass}
             value={form.totalPages}
             onChange={(e) => update("totalPages", e.target.value)}
-            placeholder="Optional — needed with last page for progress %"
+            placeholder="Optional, needed with last page for progress %"
           />
         </div>
 
@@ -275,7 +275,7 @@ export function ReadingForm({
             maxLength={120}
             value={form.quote}
             onChange={(e) => update("quote", e.target.value)}
-            placeholder="Optional — max 120 characters"
+            placeholder="Optional (max 120 characters)"
           />
           <p className="text-xs text-brand-dark/50 text-right mt-1">
             {form.quote.length}/120
@@ -327,7 +327,7 @@ export function ReadingForm({
               Generating...
             </>
           ) : (
-            "Generate My Reading Card ✨"
+            "Generate My Reading Card"
           )}
         </button>
       </form>
